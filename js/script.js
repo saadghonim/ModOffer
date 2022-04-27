@@ -130,11 +130,10 @@ btn.on('click', function(e) {
 });
 
 $(window).on('scroll', function() {
-  if($(window).scrollTop() > 150) {
+  if($(window).scrollTop() > 300) {
         $("nav").addClass("fixed");
   } else {
       $("nav").removeClass("fixed");
   };
 });
 
-// });

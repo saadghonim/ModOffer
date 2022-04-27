@@ -126,6 +126,13 @@ figure {
   z-index: 1000;
 }
 
+@media only screen and (max-width: 767px) {
+  .back_top {
+    bottom: 20px;
+    right: 12px;
+  }
+}
+
 .back_top:hover {
   cursor: pointer;
   color: #ffffff;
@@ -537,6 +544,10 @@ html[dir="ltr"] .item_div .offer_parant {
 
 .countdown span {
   margin: 0 2px;
+}
+
+html[dir="ltr"] .countdown {
+  font-size: 11px;
 }
 
 .info {
@@ -1081,7 +1092,6 @@ html[dir="ltr"] .input_div input {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
-  left: 20px;
   font-size: 24px;
   line-height: 2.684;
   display: -webkit-box;
@@ -1090,6 +1100,10 @@ html[dir="ltr"] .input_div input {
   -webkit-transition: .5;
   transition: .5;
   color: #d52d3b;
+}
+
+html[dir="rtl"] .input_div .btn_search {
+  left: 20px;
 }
 
 html[dir="ltr"] .input_div .btn_search {
@@ -1481,6 +1495,9 @@ html[dir="ltr"] .open_ {
     top: 20px;
     left: 20px;
   }
+  html[dir="rtl"] nav .close_ {
+    left: 20px;
+  }
   html[dir="ltr"] nav .close_ {
     right: 20px;
   }
@@ -1559,6 +1576,11 @@ html[dir="ltr"] .open_ {
             margin-inline-start: 3px;
     position: absolute;
     top: 3px;
+  }
+  html[dir="ltr"] .drop_angle::after {
+    right: 0px;
+  }
+  html[dir="rtl"] .drop_angle::after {
     left: 0px;
   }
 }
@@ -1869,6 +1891,7 @@ footer .f_div .ul_list a i {
   font-size: 14px;
   color: #ffffff;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .copyright_parant .copyright .tasawk {

@@ -89,6 +89,10 @@ figure{
   visibility: hidden;
   transition: .5s;
   z-index: 1000;
+  @include xs{
+    bottom: 20px;
+    right: 12px;
+  }
   &:hover {
     cursor: pointer;
     color: $color_1;
