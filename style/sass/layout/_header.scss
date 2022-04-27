@@ -311,6 +311,9 @@ nav{
   >li{
     padding: 0;
     margin-bottom: 15px;
+    .anc_nav{
+      font-size: 16px;
+    }
   }
   .hover_drop_nav {
     display: flex;
@@ -331,6 +334,20 @@ nav{
       display: none;
     }
   }
+}
+.drop_angle{
+  position: relative;
+  &::after{
+    content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  font-size: 14px;
+  margin-inline-start: 3px;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+
+}
 }
 }
 
