@@ -11,7 +11,10 @@
 }
 .blog{
   @include owl-nav_;
-  
+  @include dots_;
+  .owl-dots{
+    bottom: -35px;
+  }
  .owl-nav{
   button.owl-next,
   button.owl-prev{

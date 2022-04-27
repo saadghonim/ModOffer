@@ -138,6 +138,10 @@
     transform: translatex(-50%);
     color: $main_color;
     z-index: 9999;
+    @include xs{
+    bottom: 5px;
+
+    }
     .owl-dot{
       width: 8px;
       height: 8px;
@@ -154,8 +158,6 @@
   }
 }
 }
-
-
 @mixin angle_down {
   content: "";
   font-family: "line Awesome Free";

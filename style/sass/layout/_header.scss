@@ -7,7 +7,6 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-
 }
 // logo
 .logo{
@@ -86,7 +85,7 @@ header{
         .drop_down{
           visibility: visible;
           opacity: 1;
-          z-index: 1;
+          z-index: 99;
         }
       }
     }
@@ -117,6 +116,18 @@ header{
     color: $color_1;
     &:not(:first-child){
       margin-inline-start: 10px;
+    }
+    position: relative;
+    .drop_down{
+      @include drop_down_;
+      top: 40px;
+    }
+    &:hover{
+      .drop_down{
+      opacity: 1;
+      visibility: visible;
+      z-index: 99;
+      }
     }
     cursor: pointer;
   }
@@ -151,18 +162,22 @@ header{
     font-weight: $font_b;
     text-transform: uppercase;
   }
+
 }
+
 // navbar
 nav{
   background-color: $color_1;
   padding-inline-start: 20px;
   border-bottom: 1px solid #ededed;
   margin-bottom: 15px;
-  z-index: 100;
 
   .close_, .country_div{
     display: none;
   }
+}
+.btn_bars{
+  display: none!important;
 }
 .ul_nav{
   display: flex;
@@ -175,7 +190,7 @@ nav{
       .drop_down{
         visibility: visible;
         opacity: 1;
-        z-index: 1;
+        z-index: 20;
       }
     }
     .drop_down{
@@ -239,6 +254,11 @@ transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
 }
 // lang_user_cart
 .lang_user_cart {
+  >li{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
 order: 2;
 }
 nav{
@@ -252,6 +272,7 @@ nav{
   top: 0;
   right:-100%;
   transition: .5s;
+  z-index: 99;
   .close_{
     display: block;
     font-size: 20px;
@@ -282,6 +303,9 @@ nav{
   }
 
 }
+.btn_bars{
+  display: block!important;
+}
 .ul_nav{
   flex-direction: column;
   >li{
@@ -297,13 +321,14 @@ nav{
       visibility: visible;
       opacity: 1;
       z-index: 1;
+      transition: inherit;
       width: auto;
       min-width: auto;
       padding: 5px 0 0 0;
       box-shadow: none;
       transform: inherit;
       padding-inline-start: 23px;
-
+      display: none;
     }
   }
 }
