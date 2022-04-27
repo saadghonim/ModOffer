@@ -46,9 +46,13 @@ header{
     font-size: 24px;
     line-height: 2.684;
     display: flex;
+    transition: .5;
     color: $main_color;
     @include en{
       right: 20px;
+    }
+    &:hover{
+      color: $color_6;
     }
   }
 }
@@ -118,6 +122,12 @@ header{
       margin-inline-start: 10px;
     }
     position: relative;
+    &:hover{
+    .btn_user, .btn_cart, .anc_lang{
+      transition: .5s;
+        color: $color_6;
+      }
+    }
     // .drop_down{
     //   @include drop_down_;
     //   top: 40px;

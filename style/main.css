@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.Ellipse_1028 {
+  border-radius: 50%;
+  background-color: #262626;
+  position: absolute;
+  left: 1320px;
+  top: 4600px;
+  width: 37px;
+  height: 37px;
+  z-index: 81;
+}
+
 body {
   font-family: "Tajawal";
   font-weight: normal;
@@ -87,6 +98,55 @@ figure {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.back_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 106px;
+  right: 40px;
+  opacity: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#262626), color-stop(#262626), color-stop(#ef495d), to(#d52d3b));
+  background-image: linear-gradient(to right, #262626, #262626, #ef495d, #d52d3b);
+  background-size: 300%;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1000;
+}
+
+.back_top:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-position: 100%;
+}
+
+.back_top:hover::after {
+  color: #ffffff;
+}
+
+.back_top::after {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.back_top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @font-face {
@@ -1027,11 +1087,17 @@ html[dir="ltr"] .input_div input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: .5;
+  transition: .5;
   color: #d52d3b;
 }
 
 html[dir="ltr"] .input_div .btn_search {
   right: 20px;
+}
+
+.input_div .btn_search:hover {
+  color: #000000;
 }
 
 .country_div {
@@ -1179,6 +1245,12 @@ html[dir="ltr"] .input_div .btn_search {
 .lang_user_cart > li:not(:first-child) {
   -webkit-margin-start: 10px;
           margin-inline-start: 10px;
+}
+
+.lang_user_cart > li:hover .btn_user, .lang_user_cart > li:hover .btn_cart, .lang_user_cart > li:hover .anc_lang {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #000000;
 }
 
 .lang_user_cart .btn_user, .lang_user_cart .btn_cart {

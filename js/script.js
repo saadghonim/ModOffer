@@ -113,3 +113,28 @@ close_.addEventListener("click", function(){
 
 });
 
+
+var btn = $('.back_top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '500');
+});
+
+$(window).on('scroll', function() {
+  if($(window).scrollTop() > 150) {
+        $("nav").addClass("fixed");
+  } else {
+      $("nav").removeClass("fixed");
+  };
+});
+
+// });
