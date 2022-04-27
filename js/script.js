@@ -48,8 +48,8 @@ $('.blog .owl-carousel').owlCarousel({
 if ($(window).width() <= 992){
 // menu 
   $(".hover_drop_nav").click(function(){
-    $(".drop_down").slideToggle("500")
-  })
+    $(this).children().next().slideToggle("500");
+  });
   //start new slider
   $(".new").addClass("owl-carousel");
   $(".item_div").addClass("item")
