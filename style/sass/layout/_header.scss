@@ -125,9 +125,10 @@ header{
     }
     position: relative;
     &:hover{
+    background-color: $color_1;
     .btn_user, .btn_cart, .anc_lang{
       transition: .5s;
-        color: $color_6;
+        color: $main_color;
       }
     }
     // .drop_down{
@@ -173,6 +174,9 @@ header{
     font-size: $font_s - 2;
     font-weight: $font_b;
     text-transform: capitalize;
+    height: 100%;
+    display: block;
+    line-height: 2;
   }
 
 }
