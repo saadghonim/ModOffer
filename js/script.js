@@ -4,7 +4,7 @@ $(document).ready(function(){
 $('.slider .owl-carousel').owlCarousel({
   loop:true,
   nav:true,
-  autoplay:true,
+  // autoplay:true,
   autoplaySpeed:5000,
   loop:true,
   speed:6000,

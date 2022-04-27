@@ -1,0 +1,116 @@
+.login_form{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 51%;
+  left: 50%;
+  background-color: #ffffff;
+  width: calc(100vw - 30px);
+  max-width: 380px;
+  z-index: 111;
+  text-align: start;
+  padding: 45px 30px 40px;
+  .close_log{
+    font-size: 24px;
+    color: $color_3;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+      color: $main_color;
+    }
+    @include en{
+      right: 20px;
+    }
+      @include ar{
+      left: 20px;
+    }
+  }
+  h3{
+    font-size: 18px;
+    font-weight: $font_b;
+    color: $color_6;
+    margin-bottom: 15px;
+  }
+  span{
+    font-size: 14px;
+    color: $color_6;
+    font-weight: 400;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  .anc_regist{
+    text-decoration: revert;
+    font-size: 14px;
+    font-weight: 400;
+    color: $main_color;
+  }
+.forgot_password{
+  font-size: 14px;
+  font-weight: 400;
+  color: $main_color;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.click_login{
+  width: 100%;
+  height: 45px;
+  height:45px;
+  border-radius: 21.5px;
+  background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
+  background-size: 300%;
+  transition: .5s;
+  color:$color_1;
+  &:hover{
+    background-position: 100%;
+    color: $color_1;
+  }
+}
+}
+
+.form_group{
+  position: relative;
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+  &:not(:first-child){
+    margin-bottom: 10px;
+  }
+  i{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #b3b3b3;
+    font-size: 20px;
+    @include ar{right: 20px;}
+    @include en{left: 20px;}
+
+  }
+  input{
+    border: 1px solid #d9d9d9;
+    background-color: $color_1;
+    width: 324px;
+    height: 46px;
+    border-radius: 23px;
+    padding-inline-start: 45px;
+    font-size: 14px;
+    color: #666666;
+    text-transform: capitalize;
+    &:focus{
+      outline: 0;
+      border-color: $main_color;
+      box-shadow: none;
+    }
+  }
+}
+
+.Rectangle_26_copy {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 510px;
+  top: 217px;
+  width: 380px;
+  height: 354px;
+  z-index: 1327;
+}

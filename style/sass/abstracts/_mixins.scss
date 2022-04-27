@@ -239,7 +239,8 @@
     font-size: $font_s - 2;
     background-image: linear-gradient(to right,#ffffff,#ffffff,#ef495d,#d52d3b);
     background-size: 300%;
-
+    font-size: 15px;
+    font-weight: $font_b;
     &:hover{
 
     background-position: 100%;
@@ -264,3 +265,14 @@
 }
 }
 
+@mixin btn_gradient {
+  .btn_gradient{
+    background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
+    background-size: 300%;
+    &:hover{
+      background-position: 100%;
+      color: $color_1;
+    }
+  }
+
+}

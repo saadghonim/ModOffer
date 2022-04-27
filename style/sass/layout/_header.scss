@@ -80,7 +80,7 @@ header{
       color: $color_1;
       font-size: $font_s - 2;
       font-weight: $font_b;
-      text-transform: uppercase;
+      text-transform: capitalize;
       display: flex;
       align-items: center;
       position: relative;
@@ -172,7 +172,7 @@ header{
     display: contents;
     font-size: $font_s - 2;
     font-weight: $font_b;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
 }
@@ -218,7 +218,7 @@ nav{
   }
   .anc_nav{
     font-size: $font_s - 2;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
     color: $color_6;
     display: flex;

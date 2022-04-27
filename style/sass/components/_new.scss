@@ -87,7 +87,7 @@
   color: $main_color;
   font-size: 12px;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: capitalize;
   i{
     margin-inline-end: 2px;
   }
@@ -110,7 +110,7 @@
   align-items: center;
   font-size: 14px;
   color: #999999;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
   padding: 0 5px;
   margin-bottom: 5px;
@@ -130,7 +130,7 @@
 }
 .anc_item_info{
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: $color_6;
   font-weight: 500;
   text-align: start;
@@ -167,14 +167,14 @@
     margin-inline-end: 5px;
     font-size: 16px;
     font-weight: $font_b;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: $main_color;
   
   }
   span{
     text-decoration: line-through;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
     color: #999999;
 
@@ -183,7 +183,7 @@
 .More_details{
   transition: .5s;
   background-size: 200%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
   width: 100%;
   display: block;

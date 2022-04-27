@@ -3,7 +3,7 @@
   text-align: center;
   .blog_title{
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: $color_6;
     font-weight: $font_b;
     margin-bottom: 30px;
@@ -42,7 +42,7 @@
   .anc_blog{
     font-size: $font_s + 2;
     font-weight: $font_b;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: $color_6;
     transition: .5s;
     margin-bottom: 10px;
@@ -55,7 +55,7 @@
   }
   .plog_paragraph{
     font-size: 15px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #111111;
     line-height: 1.6;
     font-weight: 400;
@@ -67,7 +67,7 @@
   }
   .date{
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight:400 ;
     color: #999999;
   }
