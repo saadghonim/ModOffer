@@ -1,0 +1,65 @@
+body {
+  font-family: "Tajawal";
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+figure{
+  margin: 0;
+}
+.ul_gh {
+  list-style : none;
+  padding    : 0;
+  margin     : 0;
+}
+.m_P_gh {
+  padding : 0;
+  margin  : 0;
+}
+.anc_gh {
+  display: inline-block;
+}
+.anc_gh:hover {
+  text-decoration: none;
+}
+.btn_gh {
+  border          : none;
+  padding         : 0;
+  background-color: transparent;
+  border          : none;
+  display         : block;
+  cursor          : pointer;
+  outline         : none !important;
+  transition      : 0.5s;
+}
+.d_flex {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+}
+.overlay {
+  position        : fixed;
+  display         : none;
+  top             : 0;
+  bottom          : 0;
+  right           : 0;
+  left            : 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index         : 99;
+  overflow        : hidden;
+  transition      : .5s ;
+}
+.over_{
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main_color; 
+}
+  

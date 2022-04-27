@@ -1,0 +1,22 @@
+@import 'sass/abstracts/variables' ;
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/functions';
+
+// base
+@import 'sass/base/base';
+@import 'sass/base/fonts';
+
+//components
+@import 'sass/components/slider';
+@import 'sass/components/new';
+@import 'sass/components/banners';
+@import 'sass/components/blog';
+
+
+
+
+
+//layout
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+

@@ -1,0 +1,207 @@
+
+.new_parant, .childbirth_parant, .bestseller_parant,
+.Pregnancy-follow-up_parant, .anesthetic-injection{
+    @include title_main;
+    margin-bottom: 50px;
+}
+.anesthetic-injection{
+  margin-bottom: 85px;
+}
+.new{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.item_div{
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: $color_1;
+  .offer_parant{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    @include en{
+      left: 8px;
+    }
+  }
+  .anc_item_img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    img{
+      width: 100%;
+      transition: .5s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.offer_parant{
+  display: flex;
+  &:not(:last-child){
+    span{
+      margin-inline-end: 3px;
+    }
+  }
+  .item_new, .item_off, .item_bestseller, .for_limited_time{
+    display: flex;
+    justify-content: center;
+    color: $color_1;
+    font-size: 12px;
+    font-weight: $font_b;
+    border-radius: 10px;
+    height: 20px;
+    padding: 0 8px;
+
+  }
+  .item_new{
+    background-image: linear-gradient( 45deg, rgb(110,203,112) 0%, rgb(63,173,66) 100%);
+  }
+  .item_off{
+    background-image: linear-gradient( 45deg, rgb(239,73,93) 0%, rgb(213,45,59) 100%);
+  }
+  .item_bestseller{
+    background-image: linear-gradient( 45deg, rgb(88,160,233) 0%, rgb(42,124,207) 100%);
+
+  }
+  .for_limited_time{
+    background-image: linear-gradient( 45deg, rgb(246,170,89) 0%, rgb(247,99,0) 100%);
+
+  }
+}
+.countdown{
+  background-color: #f9e0e2;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main_color;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  i{
+    margin-inline-end: 2px;
+  }
+  span{
+    margin: 0 2px;
+  }
+}
+.info{
+  padding: 15px 10px 10px;
+
+}
+.Saudi_German_Health{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  span{
+    border-radius: 50%;
+    background-color: #ddf2fa;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 5px;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+.anc_item_info{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $color_6;
+  font-weight: 500;
+  text-align: start;
+  transition: .5s;
+  margin-inline-start: 5px;
+  margin-bottom: 5px;
+  display: block;
+  &:hover{
+    color: $main_color;
+  }
+}
+.evaluation{
+  display: flex;
+  margin-bottom: 5px;
+  padding: 0 5px;
+
+  span{
+    font-size: 14px;
+    color: #bebebe;
+    margin-inline-end: 1px;
+    
+  }
+  .star_g{
+    color: #e7ab42;
+  }
+  
+}
+.price{
+  display: flex;
+  padding: 0 5px;
+  margin-bottom: 15px;
+
+  p{
+    margin-inline-end: 5px;
+    font-size: 16px;
+    font-weight: $font_b;
+    text-transform: uppercase;
+    color: $main_color;
+  
+  }
+  span{
+    text-decoration: line-through;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #999999;
+
+  }
+}
+.More_details{
+  transition: .5s;
+  background-size: 200%;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
+  width: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 14px;
+  color: $color_1;
+  font-weight: 500;
+  &:hover{
+    background-position: 100%;
+    color: $color_1;
+  }
+}
+
+// mobile media
+@include sm{
+  .new{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@include xs{
+  .new{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}

@@ -1,0 +1,245 @@
+// media
+@mixin xxs {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin md {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media only screen and (max-width: 1400px) {
+        @content;
+    }
+}
+@mixin min_ {
+  @media only screen and (min-width: 992px) {
+      @content;
+  }
+}
+@mixin min_xs {
+  @media only screen and (min-width: 768px) {
+      @content;
+  }
+}
+@mixin en{
+  html[dir="ltr"] & {
+      @content;
+  }
+}
+@mixin ar{
+  html[dir="rtl"] & {
+      @content;
+  }
+}
+@mixin d_flex_c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin drop_d{
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+@mixin btn_gh{
+  height: $height_btn;
+  font-size: $font_s;
+  font-weight: 600;
+}
+@mixin angle_ {
+  &::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    position: absolute;
+    color: $color_1;
+    top: -11px;
+    font-size: 15px;
+    line-height: 3.273;
+    font-weight: 900;
+    transition: .5s;
+    @include ar{
+      left: 15px;
+    }
+    @include en{
+      right: 15px;
+    }
+  }
+  &[aria-expanded="true"]::after{
+    content: "\f106";
+  }
+}
+@mixin owl-nav_ {
+  .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    button.owl-next,
+    button.owl-prev {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      color: #808080;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+      font-size: 24px;
+      }
+      &:hover {
+        color: $main_color;
+      }
+      &:focus{
+        outline: 0;
+      }
+    }
+    
+    button.owl-prev {
+      @include ar {
+        right: -40px;
+      }
+      @include en {
+        right: -40px;
+      }
+    }
+    button.owl-next {
+      @include ar {
+        left: -40px;
+      }
+      @include en {
+        left: -40px;
+      }
+    }
+  }
+  @include xs {
+    .owl-nav {
+      display: none;
+    }
+  }
+}
+@mixin dots_{
+  .owl-dots{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translatex(-50%);
+    color: $main_color;
+    z-index: 9999;
+    .owl-dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #000000;
+      opacity: 0.5;
+      margin-inline-end: 6px;
+  }
+  .active{
+    background-color: $main_color;
+    opacity: 1;
+    transform: scale(1.2);
+    outline: 0;
+  }
+}
+}
+
+
+@mixin angle_down {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  font-size: 10px;
+  margin-inline-start: 3px;
+}
+@mixin drop_down_ {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 35px;
+  background-color: $color_1;
+  min-width: 143px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 0px rgba(1, 1, 1, 0.09);
+  padding: 15px 20px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: .5s;
+  &::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 8px solid #fff;
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      opacity: 1;
+  }
+  .anc_drop{
+    font-size: $font_s - 2;
+    color: $color_3;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .5s;
+    &:hover{
+      color: $main_color;
+    }
+  }
+}
+@mixin title_main{
+.title_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  .title{
+    font-size: 20px;
+    color: $color_6;
+    font-weight: $font_b;
+    text-transform: uppercase;
+  }
+  .anc_more{
+    text-transform: uppercase;
+    color: $main_color;
+    border: 1px solid $main_color;
+    width: 98px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    font-size: $font_s - 2;
+    background-image: linear-gradient(to right,#ffffff,#ffffff,#ef495d,#d52d3b);
+    background-size: 300%;
+
+    &:hover{
+
+    background-position: 100%;
+    color: $color_1;
+    }
+  }
+}
+}
+
