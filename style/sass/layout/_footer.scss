@@ -8,11 +8,15 @@ footer{
     height: auto;
     position: absolute;
     top: 50px;
-    left: -23px;
     z-index: -1;
     width: 400px;
+    @include ar{
+      left: -23px;
+
+    }
     @include en{
-      right: -50px;
+      right: -23px;
+      transform: rotatey(180deg);
     }
   }
   .footer{

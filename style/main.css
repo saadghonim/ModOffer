@@ -1618,13 +1618,18 @@ footer .shape_f {
   height: auto;
   position: absolute;
   top: 50px;
-  left: -23px;
   z-index: -1;
   width: 400px;
 }
 
+html[dir="rtl"] footer .shape_f {
+  left: -23px;
+}
+
 html[dir="ltr"] footer .shape_f {
-  right: -50px;
+  right: -23px;
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
 
 footer .footer {
