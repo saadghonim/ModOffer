@@ -1,14 +1,17 @@
 .login_form{
   position: fixed;
-  transform: translate(-50%, -50%);
-  top: 51%;
+  transform: translatex(-50%);
   left: 50%;
+  top: -1000px;
   background-color: #ffffff;
   width: calc(100vw - 30px);
   max-width: 380px;
+
   z-index: 111;
   text-align: start;
   padding: 45px 30px 40px;
+  transition: .5s;
+  transition: .5s;
   .close_log{
     font-size: 24px;
     color: $color_3;
@@ -51,7 +54,7 @@
   color: $main_color;
   text-align: center;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .click_login{
   width: 100%;
@@ -75,7 +78,7 @@
     margin-bottom: 10px;
   }
   &:not(:first-child){
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   i{
     position: absolute;
@@ -113,4 +116,10 @@
   width: 380px;
   height: 354px;
   z-index: 1327;
+}
+
+.open_login{
+  top: 215px;
+  transform: translatex(-50%);
+
 }

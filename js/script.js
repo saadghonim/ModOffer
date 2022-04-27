@@ -1,5 +1,19 @@
-$(document).ready(function(){
+// varibles
+const navBar_ = document.querySelector("nav");
+const close_ = document.querySelector(".close_");
+const li_slide_menu = document.querySelector(".hover_drop_nav")
+const overlay = document.querySelector(".overlay");
+const open_menu = document.querySelector(".bars_menu");
+const body_ = document.querySelector("body");
+const new_ = document.querySelectorAll(".new");
+const item_div_ = document.querySelectorAll(".item_div");
+const click_user = document.querySelector(".click_user");
+const login_form = document.querySelector(".login_form");
+const close_log = document.querySelector(".close_log");
 
+console.log(close_log);
+
+$(document).ready(function(){
 //start slider
 $('.slider .owl-carousel').owlCarousel({
   loop:true,
@@ -83,15 +97,6 @@ if ($(window).width() <= 767){
 };
 
 });
-// varibles
-const navBar_ = document.querySelector("nav");
-const close_ = document.querySelector(".close_");
-const li_slide_menu = document.querySelector(".hover_drop_nav")
-const overlay = document.querySelector(".overlay");
-const open_menu = document.querySelector(".bars_menu");
-const body_ = document.querySelector("body");
-const new_ = document.querySelectorAll(".new")
-const item_div_ = document.querySelectorAll(".item_div")
 
 // menu & overlay
 open_menu.addEventListener("click", function(){
@@ -104,6 +109,9 @@ overlay.addEventListener("click", function(){
   navBar_.classList.remove("open_");
   body_.classList.remove("over_");
   overlay.style.display = "none";
+  login_form.classList.remove("open_login");
+
+
 
 });
 close_.addEventListener("click", function(){
@@ -113,9 +121,8 @@ close_.addEventListener("click", function(){
 
 });
 
-
+// back_top
 var btn = $('.back_top');
-
 $(window).scroll(function() {
   if ($(window).scrollTop() > 100) {
     btn.addClass('show');
@@ -123,12 +130,10 @@ $(window).scroll(function() {
     btn.removeClass('show');
   }
 });
-
 btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '500');
 });
-
 $(window).on('scroll', function() {
   if($(window).scrollTop() > 300) {
         $("nav").addClass("fixed");
@@ -137,3 +142,14 @@ $(window).on('scroll', function() {
   };
 });
 
+// login 
+click_user.addEventListener("click", function(){
+  body_.classList.add("over_");
+  overlay.style.display = "block";
+  login_form.classList.add("open_login");
+})
+close_log.addEventListener("click", function(){
+  body_.classList.remove("over_");
+  overlay.style.display = "none";
+  login_form.classList.remove("open_login");
+})

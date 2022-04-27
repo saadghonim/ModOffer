@@ -2007,16 +2007,19 @@ footer .f_div .ul_list a i {
 
 .login_form {
   position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 51%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
   left: 50%;
+  top: -1000px;
   background-color: #ffffff;
   width: calc(100vw - 30px);
   max-width: 380px;
   z-index: 111;
   text-align: start;
   padding: 45px 30px 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  transition: .5s;
 }
 
 .login_form .close_log {
@@ -2070,7 +2073,7 @@ html[dir="rtl"] .login_form .close_log {
   color: #d52d3b;
   text-align: center;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .login_form .click_login {
@@ -2100,7 +2103,7 @@ html[dir="rtl"] .login_form .close_log {
 }
 
 .form_group:not(:first-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .form_group i {
@@ -2148,5 +2151,11 @@ html[dir="ltr"] .form_group i {
   width: 380px;
   height: 354px;
   z-index: 1327;
+}
+
+.open_login {
+  top: 215px;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
 /*# sourceMappingURL=main.css.map */
