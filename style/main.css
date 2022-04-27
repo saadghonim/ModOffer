@@ -73,7 +73,7 @@ figure {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
   height: 0px;
 }
 
@@ -885,7 +885,7 @@ html[dir="ltr"] .blog .owl-nav button.owl-next {
 
 .blog .owl-nav button.owl-next,
 .blog .owl-nav button.owl-prev {
-  top: 27%;
+  top: 28%;
 }
 
 .anc_blog, .plog_paragraph, .date {
@@ -1524,9 +1524,9 @@ footer .shape_f {
   height: auto;
   position: absolute;
   top: 50px;
-  left: -20px;
+  left: -23px;
   z-index: -1;
-  width: 396px;
+  width: 400px;
 }
 
 html[dir="ltr"] footer .shape_f {
