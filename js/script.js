@@ -50,34 +50,37 @@ if ($(window).width() <= 992){
   $(".hover_drop_nav").click(function(){
     $(this).children().next().slideToggle("500");
   });
-  //start new slider
-  $(".new").addClass("owl-carousel");
-  $(".item_div").addClass("item")
 
-  $('.new.owl-carousel').owlCarousel({
-    loop:true,
-    nav:false,
-    margin:15,
-    autoplay:true,
-    autoplaySpeed:5000,
-    loop:true,
-    speed:6000,
-    rtl: $("html").attr("dir") == "rtl" ? true : false,
-    navText: ["<i class='las la-angle-right'></i>", "<i class='las la-angle-left'></i>"],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-  })
 };
-
+if ($(window).width() <= 767){
+    //start new slider
+    $(".new").addClass("owl-carousel");
+    $(".item_div").addClass("item")
+  
+    $('.new.owl-carousel').owlCarousel({
+      loop:false,
+      nav:false,
+      margin:15,
+      // autoplay:true,
+      stagePadding: 3,
+      autoplaySpeed:5000,
+      loop:true,
+      speed:6000,
+      rtl: $("html").attr("dir") == "rtl" ? true : false,
+      navText: ["<i class='las la-angle-right'></i>", "<i class='las la-angle-left'></i>"],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:1
+          }
+      }
+    })
+};
 
 });
 // varibles

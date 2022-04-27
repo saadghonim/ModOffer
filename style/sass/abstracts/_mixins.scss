@@ -149,6 +149,9 @@
       background-color: #000000;
       opacity: 0.5;
       margin-inline-end: 6px;
+      &:focus{
+        outline: 0;
+      }
   }
   .active{
     background-color: $main_color;
