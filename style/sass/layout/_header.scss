@@ -76,7 +76,9 @@ header{
       margin-inline-end: 20px;
     }
     .country, .city{
-      cursor: pointer;
+      div{
+        cursor: pointer;
+      }
       color: $color_1;
       font-size: $font_s - 2;
       font-weight: $font_b;
@@ -174,9 +176,11 @@ header{
     font-size: $font_s - 2;
     font-weight: $font_b;
     text-transform: capitalize;
-    height: 100%;
-    display: block;
-    line-height: 2;
+    @include en{
+      height: 100%;
+      display: block;
+      line-height: 2;
+    }
   }
 
 }

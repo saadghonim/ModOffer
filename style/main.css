@@ -1157,7 +1157,6 @@ html[dir="ltr"] .input_div .btn_search {
 }
 
 .country_div .country, .country_div .city {
-  cursor: pointer;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -1169,6 +1168,10 @@ html[dir="ltr"] .input_div .btn_search {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.country_div .country div, .country_div .city div {
+  cursor: pointer;
 }
 
 .country_div .country::after, .country_div .city::after {
@@ -1324,6 +1327,9 @@ html[dir="ltr"] .input_div .btn_search {
   font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+html[dir="ltr"] .lang_user_cart .anc_lang {
   height: 100%;
   display: block;
   line-height: 2;
