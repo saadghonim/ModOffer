@@ -8,8 +8,9 @@ footer{
     height: auto;
     position: absolute;
     top: 50px;
-    left: -50px;
+    left: 0px;
     z-index: -1;
+    width: 396px;
     @include en{
       right: -50px;
     }
@@ -61,9 +62,9 @@ footer{
       margin-bottom: 20px;
     }
     p {
-      font-size: $font_s;
+      font-size: $font_s - 2;
       color: #959595;
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 20px;
       @include ar{
       font-size: $font_s - 2;
@@ -158,18 +159,12 @@ footer{
 }
 @include sm{
   footer{
-    padding: 50px 0 0px;
+    padding: 0;
     .shape_f{
-      position: absolute;
-      top: 0px;
-      left: -50px;
-      z-index: 11;
-      @include en{
-        right: -50px;
-      }
+      display: none;
     }
     .footer{
-      padding: 0;
+      padding-bottom: 20px;
       .logo_f{
         text-align: center;
         margin-bottom: 20px;
@@ -238,8 +233,8 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 60px;
-    .copy_t{
-      font-size: $font_s - 4;
+    .copy_t, .tasawk{
+      font-size: $font_s - 2;
       color: $color_1;
       font-weight: 400;
     }
@@ -275,20 +270,29 @@ div{
   .copyright_parant{
     .copyright{
       flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
       padding: 15px 0;
-  
       .copy_t{
         text-align:center;
         text-align-last: center;
+        order: 2;
+      }
+      .tasawk{
+        order: 3;
       }
       p{
         margin: 0;
         &:first-child{
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
       }
     }
   }
+  .maroof_vat{
+    order: 1;
+    margin-bottom: 20px;
+    }
 }
 
 

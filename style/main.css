@@ -82,6 +82,13 @@ figure {
   background: #d52d3b;
 }
 
+@media only screen and (max-width: 767px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @font-face {
   font-family: 'Tajawal';
   src: url("../fonts/Tajawal-ExtraLight.woff2") format("woff2"), url("../fonts/Tajawal-ExtraLight.woff") format("woff");
@@ -1385,8 +1392,9 @@ footer .shape_f {
   height: auto;
   position: absolute;
   top: 50px;
-  left: -50px;
+  left: 0px;
   z-index: -1;
+  width: 396px;
 }
 
 html[dir="ltr"] footer .shape_f {
@@ -1458,9 +1466,9 @@ footer .newslatter h4 {
 }
 
 footer .newslatter p {
-  font-size: 16px;
+  font-size: 14px;
   color: #959595;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -1572,19 +1580,13 @@ footer .f_div .ul_list a i {
 
 @media only screen and (max-width: 991px) {
   footer {
-    padding: 50px 0 0px;
+    padding: 0;
   }
   footer .shape_f {
-    position: absolute;
-    top: 0px;
-    left: -50px;
-    z-index: 11;
-  }
-  html[dir="ltr"] footer .shape_f {
-    right: -50px;
+    display: none;
   }
   footer .footer {
-    padding: 0;
+    padding-bottom: 20px;
   }
   footer .footer .logo_f {
     text-align: center;
@@ -1658,8 +1660,8 @@ footer .f_div .ul_list a i {
   padding-bottom: 60px;
 }
 
-.copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
-  font-size: 12px;
+.copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk, .copyright_parant .copyright .tasawk {
+  font-size: 14px;
   color: #ffffff;
   font-weight: 400;
 }
@@ -1708,17 +1710,36 @@ footer .f_div .ul_list a i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 15px 0;
   }
   .copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
     text-align: center;
     text-align-last: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .copyright_parant .copyright .tasawk {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .copyright_parant .copyright p {
     margin: 0;
   }
   .copyright_parant .copyright p:first-child {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .maroof_vat {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -63,3 +63,11 @@ figure{
   background: $main_color; 
 }
   
+
+
+@include xs{
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
