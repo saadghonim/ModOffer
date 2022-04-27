@@ -100,6 +100,7 @@
     font-size: 14px;
     color: #666666;
     text-transform: capitalize;
+    max-width: 100%;
     &:focus{
       outline: 0;
       border-color: $main_color;

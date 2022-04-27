@@ -112,7 +112,7 @@ figure {
   visibility: hidden;
   -webkit-transition: .5s;
   transition: .5s;
-  z-index: 1000;
+  z-index: 80;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2134,6 +2134,7 @@ html[dir="ltr"] .form_group i {
   font-size: 14px;
   color: #666666;
   text-transform: capitalize;
+  max-width: 100%;
 }
 
 .form_group input:focus {
