@@ -292,7 +292,6 @@ nav{
     cursor: pointer;
     position: absolute;
     top: 20px;
-    left: 20px;
     @include ar{
       left: 20px;
     }
@@ -351,6 +350,9 @@ nav{
   }
 }
 .drop_angle{
+  .drop_down{
+    text-align: start!important;
+  }
   position: relative;
   &::after{
     content: "";

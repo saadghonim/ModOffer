@@ -1,15 +1,4 @@
 @charset "UTF-8";
-.Ellipse_1028 {
-  border-radius: 50%;
-  background-color: #262626;
-  position: absolute;
-  left: 1320px;
-  top: 4600px;
-  width: 37px;
-  height: 37px;
-  z-index: 81;
-}
-
 body {
   font-family: "Tajawal";
   font-weight: normal;
@@ -384,6 +373,19 @@ main .anc_slider img {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 767px) {
+  html[dir="ltr"] .new_parant .title_div .title, html[dir="ltr"] .childbirth_parant .title_div .title, html[dir="ltr"] .bestseller_parant .title_div .title, html[dir="ltr"]
+  .Pregnancy-follow-up_parant .title_div .title, html[dir="ltr"] .anesthetic-injection .title_div .title {
+    font-size: 18px;
+  }
+  html[dir="ltr"] .new_parant .title_div .anc_more, html[dir="ltr"] .childbirth_parant .title_div .anc_more, html[dir="ltr"] .bestseller_parant .title_div .anc_more, html[dir="ltr"]
+  .Pregnancy-follow-up_parant .title_div .anc_more, html[dir="ltr"] .anesthetic-injection .title_div .anc_more {
+    width: 90px;
+    height: 26px;
+    border-radius: 13px;
+  }
+}
+
 .anesthetic-injection {
   margin-bottom: 85px;
 }
@@ -548,6 +550,10 @@ html[dir="ltr"] .item_div .offer_parant {
 
 html[dir="ltr"] .countdown {
   font-size: 11px;
+}
+
+html[dir="ltr"] .countdown i {
+  margin-bottom: 2px;
 }
 
 .info {
@@ -1493,7 +1499,6 @@ html[dir="ltr"] .open_ {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    left: 20px;
   }
   html[dir="rtl"] nav .close_ {
     left: 20px;
@@ -1566,6 +1571,9 @@ html[dir="ltr"] .open_ {
   }
   .drop_angle {
     position: relative;
+  }
+  .drop_angle .drop_down {
+    text-align: start !important;
   }
   .drop_angle::after {
     content: "";

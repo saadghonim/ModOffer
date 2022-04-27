@@ -96,6 +96,9 @@
   }
   @include en{
     font-size: 11px;
+    i{
+      margin-bottom: 2px;
+    }
   }
 }
 .info{

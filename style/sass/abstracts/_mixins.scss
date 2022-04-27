@@ -222,6 +222,7 @@
     color: $color_6;
     font-weight: $font_b;
     text-transform: uppercase;
+
   }
   .anc_more{
     text-transform: uppercase;
@@ -245,16 +246,21 @@
     color: $color_1;
     }
   }
+  @include xs{
+    .title{
+      @include en{
+        font-size: 18px;
+        }
+    }
+    .anc_more{
+
+      @include en{
+        width: 90px;
+        height: 26px;
+        border-radius: 13px;
+        }
+    }
+  }
 }
 }
 
-.Ellipse_1028 {
-  border-radius: 50%;
-  background-color: rgb(38, 38, 38);
-  position: absolute;
-  left: 1320px;
-  top: 4600px;
-  width: 37px;
-  height: 37px;
-  z-index: 81;
-}
