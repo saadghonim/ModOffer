@@ -278,6 +278,12 @@ transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
     background-color: transparent;
     width: auto;
     height: auto;
+    &:hover{
+      background-color: transparent;
+      i{
+        color: $color_1;
+      }
+    }
   }
 order: 2;
 }

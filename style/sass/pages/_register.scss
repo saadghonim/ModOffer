@@ -116,10 +116,15 @@
 
 
 @include xs{
+  .login_form{
+  padding: 45px 15px 40px;
+
+  }
   .form_group{
     input{
       height: 40px;
       border-radius: 20px;
+      width: 100%;
     }
   }
   .anc_regist{

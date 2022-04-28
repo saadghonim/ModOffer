@@ -153,3 +153,23 @@ close_log.addEventListener("click", function(){
   overlay.style.display = "none";
   login_form.classList.remove("open_login");
 })
+
+var mins = document.querySelector(".minutes");
+var hours = document.querySelector(".hours");
+var days = document.querySelector(".days");
+
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('May 4, 2022 06:50:00').getTime(),
+    x = setInterval(function() {
+      
+      let now = new Date().getTime(),
+          distance = countDown - now;
+      days.innerText = Math.floor(distance / (day)),
+      hours.innerText = Math.floor((distance % (day)) / (hour)),
+      mins.innerText = Math.floor((distance % (hour)) / (minute))
+    }, second)
+

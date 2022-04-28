@@ -1497,6 +1497,12 @@ html[dir="ltr"] .open_ {
     width: auto;
     height: auto;
   }
+  .lang_user_cart > li:hover {
+    background-color: transparent;
+  }
+  .lang_user_cart > li:hover i {
+    color: #ffffff;
+  }
   nav {
     -webkit-transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
             transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
@@ -2150,9 +2156,13 @@ html[dir="ltr"] .form_group i {
 }
 
 @media only screen and (max-width: 767px) {
+  .login_form {
+    padding: 45px 15px 40px;
+  }
   .form_group input {
     height: 40px;
     border-radius: 20px;
+    width: 100%;
   }
   .anc_regist {
     -webkit-text-decoration: revert;
