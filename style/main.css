@@ -1330,12 +1330,14 @@ html[dir="ltr"] .input_div .btn_search {
   font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
-}
-
-html[dir="ltr"] .lang_user_cart .anc_lang {
-  height: 100%;
-  display: block;
-  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav {
@@ -1497,7 +1499,7 @@ html[dir="ltr"] .open_ {
   }
   .lang_user_cart > li {
     background-color: transparent;
-    width: auto;
+    width: 24px;
     height: auto;
   }
   .lang_user_cart > li:hover {
@@ -1632,6 +1634,10 @@ html[dir="ltr"] .open_ {
   }
   .logo img {
     width: 120px;
+  }
+  .lang_user_cart .btn_cart span {
+    top: -6px;
+    right: -6px;
   }
   .input_div {
     margin-top: 10px;
@@ -1988,7 +1994,7 @@ footer .f_div .ul_list a i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 20px;
   }
   .copyright_parant .copyright .copy_t, .copyright_parant .copyright .tasawk {
     text-align: center;

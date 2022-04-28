@@ -176,11 +176,9 @@ header{
     font-size: $font_s - 2;
     font-weight: $font_b;
     text-transform: capitalize;
-    @include en{
-      height: 100%;
-      display: block;
-      line-height: 2;
-    }
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 
 }
@@ -239,6 +237,7 @@ nav{
       font-size: 20px;
       margin-inline-end: 4px;
     }
+
   }
 }
 .open_{
@@ -276,7 +275,7 @@ transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
 .lang_user_cart {
   >li{
     background-color: transparent;
-    width: auto;
+    width: 24px;
     height: auto;
     &:hover{
       background-color: transparent;
@@ -398,6 +397,15 @@ nav{
     width: 120px;
   }
 }
+.lang_user_cart{
+  .btn_cart{
+    span{
+      top: -6px;
+      right: -6px;
+    }
+  }
+}
+
 
 // input_div
 .input_div{
