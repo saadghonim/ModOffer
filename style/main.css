@@ -1460,6 +1460,8 @@ nav .close_, nav .country_div {
 
 .open_ {
   right: 0;
+  -webkit-transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
+          transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
 }
 
 html[dir="ltr"] .open_ {
@@ -1507,6 +1509,8 @@ html[dir="ltr"] .open_ {
     color: #ffffff;
   }
   nav {
+    -webkit-transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+            transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
     width: 80%;
     height: 100%;
     position: fixed;
@@ -1518,7 +1522,7 @@ html[dir="ltr"] .open_ {
     right: -100%;
     -webkit-transition: .5s;
     transition: .5s;
-    z-index: 99;
+    z-index: 999;
   }
   nav .close_ {
     display: block;
