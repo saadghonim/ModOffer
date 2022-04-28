@@ -469,7 +469,6 @@ html[dir="ltr"] .item_div .offer_parant {
 }
 
 .item_div .anc_item_img {
-  width: 100%;
   max-width: 100%;
   overflow: hidden;
   display: block;
@@ -605,7 +604,8 @@ html[dir="ltr"] .countdown i {
 }
 
 .Saudi_German_Health span img {
-  max-width: 100%;
+  max-width: 100% !important;
+  width: auto !important;
 }
 
 .anc_item_info {

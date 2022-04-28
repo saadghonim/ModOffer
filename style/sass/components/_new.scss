@@ -31,7 +31,7 @@
     }
   }
   .anc_item_img{
-    width: 100%;
+    // width: 100%;
     max-width: 100%;
     overflow: hidden;
     display: block;
@@ -44,6 +44,7 @@
     }
   }
 }
+
 .offer_parant{
   display: flex;
   &:not(:last-child){
@@ -125,7 +126,8 @@
     justify-content: center;
     margin-inline-end: 5px;
     img{
-      max-width: 100%;
+      max-width: 100%!important;
+      width: auto!important;
     }
   }
 }
