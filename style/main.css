@@ -344,12 +344,12 @@ main .anc_slider img {
   font-size: 20px;
   color: #000000;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .new_parant .title_div .anc_more, .childbirth_parant .title_div .anc_more, .bestseller_parant .title_div .anc_more,
 .Pregnancy-follow-up_parant .title_div .anc_more, .anesthetic-injection .title_div .anc_more {
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #d52d3b;
   border: 1px solid #d52d3b;
   width: 98px;
@@ -504,6 +504,9 @@ html[dir="ltr"] .item_div .offer_parant {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
@@ -1551,7 +1554,9 @@ html[dir="ltr"] .open_ {
     left: -100%;
   }
   .btn_bars {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .ul_nav {
     -webkit-box-orient: vertical;

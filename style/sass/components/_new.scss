@@ -54,6 +54,7 @@
   .item_new, .item_off, .item_bestseller, .for_limited_time{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: $color_1;
     font-size: 12px;
     font-weight: $font_b;
