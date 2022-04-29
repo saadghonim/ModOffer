@@ -146,8 +146,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: #000000;
-      opacity: 0.5;
+      background-color: rgba(0, 0, 0, 0.5);
       margin-inline-end: 6px;
       &:focus{
         outline: 0;
@@ -216,7 +215,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   .title{
     font-size: 20px;
     color: $color_6;
@@ -239,7 +238,7 @@
     font-size: $font_s - 2;
     background-image: linear-gradient(to right,#ffffff,#ffffff,#ef495d,#d52d3b);
     background-size: 300%;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: $font_b;
     &:hover{
 

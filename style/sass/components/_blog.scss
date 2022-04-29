@@ -40,7 +40,7 @@
     }
   }
   .anc_blog{
-    font-size: $font_s + 2;
+    font-size: $font_s - 2;
     font-weight: $font_b;
     text-transform: capitalize;
     color: $color_6;
@@ -54,7 +54,7 @@
     }
   }
   .plog_paragraph{
-    font-size: 15px;
+    font-size: 14px;
     text-transform: capitalize;
     color: #111111;
     line-height: 1.6;

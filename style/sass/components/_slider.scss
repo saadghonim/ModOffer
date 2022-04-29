@@ -2,6 +2,16 @@ main{
   margin-bottom: 60px;
   @include owl-nav_;
   @include dots_;
+  .owl-dots {
+    .owl-dot{
+      background-color: rgba(0, 0, 0, 0.3);
+
+    }
+    .owl-dot.active{
+      background-color: $main_color;
+      opacity: 1;
+    }
+  }
   .anc_slider{
     img{
       max-width: 100%;

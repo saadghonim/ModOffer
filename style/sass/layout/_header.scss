@@ -16,8 +16,8 @@ header{
 .input_div{
   position: relative;
   input{
-    height: 42px;
-    border-radius: 21px;
+    height: 40px;
+    border-radius: 20px;
     border: none;
     padding: 0 30px 0 50px;
     font-size: $font_s - 2;
@@ -80,7 +80,7 @@ header{
         cursor: pointer;
       }
       color: $color_1;
-      font-size: $font_s - 2;
+      font-size: $font_s - 4;
       font-weight: $font_b;
       text-transform: capitalize;
       display: flex;
@@ -147,7 +147,7 @@ header{
     cursor: pointer;
   }
   .btn_user, .btn_cart{
-    font-size: 24px;
+    font-size: 20px;
     display: contents;
     color: $color_1;
   }
@@ -200,7 +200,7 @@ nav{
 .ul_nav{
   display: flex;
   >li{
-    padding: 15px 15px 20px;
+    padding: 15px;
   }
   .hover_drop_nav{
     position: relative;
@@ -242,7 +242,7 @@ nav{
 }
 .open_{
 right: 0;
-transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
+top: 0;
 @include en{
   left: 0;
 }
@@ -287,14 +287,13 @@ transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
 order: 2;
 }
 nav{
-  transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
   width: 80%;
   height: 100%;
   position: fixed;
   overflow: auto;
   padding-top: 120px;
   padding-inline-start: 0;
-  top: 0;
+  top: -100%;
   right:-100%;
   transition: .5s;
   z-index: 999;

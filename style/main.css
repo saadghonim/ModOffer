@@ -84,8 +84,8 @@ figure {
 
 @media only screen and (max-width: 767px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -103,8 +103,8 @@ figure {
   height: 37px;
   border-radius: 50%;
   position: fixed;
-  bottom: 106px;
-  right: 40px;
+  bottom: 15px;
+  right: 15px;
   opacity: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#262626), color-stop(#262626), color-stop(#ef495d), to(#d52d3b));
   background-image: linear-gradient(to right, #262626, #262626, #ef495d, #d52d3b);
@@ -292,8 +292,7 @@ main .owl-dots .owl-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #000000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-margin-end: 6px;
           margin-inline-end: 6px;
 }
@@ -308,6 +307,15 @@ main .owl-dots .active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   outline: 0;
+}
+
+main .owl-dots .owl-dot {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .owl-dots .owl-dot.active {
+  background-color: #d52d3b;
+  opacity: 1;
 }
 
 main .anc_slider img {
@@ -336,7 +344,7 @@ main .anc_slider img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .new_parant .title_div .title, .childbirth_parant .title_div .title, .bestseller_parant .title_div .title,
@@ -371,7 +379,7 @@ main .anc_slider img {
   background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(#ffffff), color-stop(#ef495d), to(#d52d3b));
   background-image: linear-gradient(to right, #ffffff, #ffffff, #ef495d, #d52d3b);
   background-size: 300%;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -427,8 +435,7 @@ main .anc_slider img {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #000000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-margin-end: 6px;
           margin-inline-end: 6px;
 }
@@ -570,22 +577,28 @@ html[dir="ltr"] .countdown i {
   padding: 15px 10px 10px;
 }
 
-.Saudi_German_Health {
+.Service_Provider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #999999;
   text-transform: capitalize;
   font-weight: 500;
   padding: 0 5px;
   margin-bottom: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.Saudi_German_Health span {
+.Service_Provider:hover {
+  color: #d52d3b;
+}
+
+.Service_Provider span {
   border-radius: 50%;
   background-color: #ddf2fa;
   width: 24px;
@@ -603,7 +616,7 @@ html[dir="ltr"] .countdown i {
           margin-inline-end: 5px;
 }
 
-.Saudi_German_Health span img {
+.Service_Provider span img {
   max-width: 100% !important;
   width: auto !important;
 }
@@ -842,7 +855,7 @@ html[dir="ltr"] .countdown i {
   .banner_parant .banner {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
   }
   .big_banner {
     margin-bottom: 40px;
@@ -949,8 +962,7 @@ html[dir="ltr"] .blog .owl-nav button.owl-next {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #000000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-margin-end: 6px;
           margin-inline-end: 6px;
 }
@@ -1002,7 +1014,7 @@ html[dir="ltr"] .blog .owl-nav button.owl-next {
 }
 
 .blog_item .anc_blog {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
   color: #000000;
@@ -1018,7 +1030,7 @@ html[dir="ltr"] .blog .owl-nav button.owl-next {
 }
 
 .blog_item .plog_paragraph {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: capitalize;
   color: #111111;
   line-height: 1.6;
@@ -1065,8 +1077,8 @@ header {
 }
 
 .input_div input {
-  height: 42px;
-  border-radius: 21px;
+  height: 40px;
+  border-radius: 20px;
   border: none;
   padding: 0 30px 0 50px;
   font-size: 14px;
@@ -1161,7 +1173,7 @@ html[dir="ltr"] .input_div .btn_search {
 
 .country_div .country, .country_div .city {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: capitalize;
   display: -webkit-box;
@@ -1292,7 +1304,7 @@ html[dir="ltr"] .input_div .btn_search {
 }
 
 .lang_user_cart .btn_user, .lang_user_cart .btn_cart {
-  font-size: 24px;
+  font-size: 20px;
   display: contents;
   color: #ffffff;
 }
@@ -1363,7 +1375,7 @@ nav .close_, nav .country_div {
 }
 
 .ul_nav > li {
-  padding: 15px 15px 20px;
+  padding: 15px;
 }
 
 .ul_nav .hover_drop_nav {
@@ -1460,8 +1472,7 @@ nav .close_, nav .country_div {
 
 .open_ {
   right: 0;
-  -webkit-transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
-          transform: rotate3d(3, 2, 2, 0deg) translateZ(50px);
+  top: 0;
 }
 
 html[dir="ltr"] .open_ {
@@ -1509,8 +1520,6 @@ html[dir="ltr"] .open_ {
     color: #ffffff;
   }
   nav {
-    -webkit-transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
-            transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
     width: 80%;
     height: 100%;
     position: fixed;
@@ -1518,7 +1527,7 @@ html[dir="ltr"] .open_ {
     padding-top: 120px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
-    top: 0;
+    top: -100%;
     right: -100%;
     -webkit-transition: .5s;
     transition: .5s;
@@ -1767,7 +1776,7 @@ footer .newslatter .input_div_f input {
           padding-inline-start: 20px;
   -webkit-padding-end: 50px;
           padding-inline-end: 50px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #666666;
   border-radius: 21px;
@@ -1815,7 +1824,7 @@ footer .f_div .f_btn {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
   height: 100%;
   text-align: start;
@@ -1966,7 +1975,7 @@ footer .f_div .ul_list a i {
 }
 
 .maroof_vat div {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2186,6 +2195,11 @@ html[dir="ltr"] .form_group i {
     width: 100%;
     height: 40px;
     border-radius: 20px;
+  }
+  .open_login {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
