@@ -249,7 +249,6 @@ nav{
 }
 .open_{
 right: 0;
-top: 0;
 @include en{
   left: 0;
 }
@@ -304,7 +303,7 @@ nav{
   overflow: auto;
   padding-top: 120px;
   padding-inline-start: 0;
-  top: -100%;
+  top: 0;
   right:-100%;
   transition: .5s;
   z-index: 999;

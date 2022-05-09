@@ -1555,7 +1555,6 @@ html[dir="ltr"] .ul_nav .hover_drop_nav .drop_down {
 
 .open_ {
   right: 0;
-  top: 0;
 }
 
 html[dir="ltr"] .open_ {
@@ -1615,7 +1614,7 @@ html[dir="ltr"] .open_ {
     padding-top: 120px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
-    top: -100%;
+    top: 0;
     right: -100%;
     -webkit-transition: .5s;
     transition: .5s;
@@ -2291,7 +2290,7 @@ html[dir="rtl"] .form_group .Flag-login {
 .open_login {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 64%;
+  top: 50%;
 }
 
 @media only screen and (max-width: 767px) {
