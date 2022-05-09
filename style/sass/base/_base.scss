@@ -3,7 +3,7 @@ body {
   font-weight: normal;
   font-style: normal;
   overflow-x: hidden;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 figure{
   margin: 0;
@@ -63,16 +63,12 @@ figure{
   background: $main_color; 
 }
   
-
-
 @include xs{
   .container{
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-
-
 .back_top {
   display: flex;
   align-items: center;
@@ -111,8 +107,30 @@ figure{
 
   }
 }
-
 .back_top.show {
   opacity: 1;
   visibility: visible;
 }
+
+
+// preload
+// .progress {
+//   position: fixed;
+//   left: 0px;
+//   top: 0px;
+//   width: 100%;
+//   height: 5px;
+//   z-index: 9999;
+//   background-color: transparent;
+// }
+// .bar { 
+//   background-color: $color_1; 
+//   width:0%; 
+//   height:5px; 
+// }
+// .percent { 
+//   position:absolute; 
+//   display:inline-block; 
+//   top:3px; 
+//   left:48%; 
+// }

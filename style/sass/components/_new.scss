@@ -1,11 +1,16 @@
 
-.new_parant, .childbirth_parant, .bestseller_parant,
-.Pregnancy-follow-up_parant, .anesthetic-injection{
+.new_parant, .childbirth_parant, .anesthetic-injection{
     @include title_main;
     margin-bottom: 50px;
 }
+.bestseller_parant, .Pregnancy-follow-up_parant{
+  @include title_main;
+  margin-bottom: 40px;
+  padding: 50px 0 60px;
+  background-color: #fdf3f3;
+}
 .anesthetic-injection{
-  margin-bottom: 85px;
+  margin-bottom: 100px;
 }
 .new{
   display: grid;
@@ -19,6 +24,7 @@
 .item_div{
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   background-color: $color_1;
   .offer_parant{
@@ -28,6 +34,15 @@
     z-index: 10;
     @include en{
       left: 8px;
+    }
+  }
+  .img_item{
+    position: relative;
+    .countdown{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
   .anc_item_img{
@@ -44,7 +59,6 @@
     }
   }
 }
-
 .offer_parant{
   display: flex;
   &:not(:last-child){

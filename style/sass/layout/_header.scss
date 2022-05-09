@@ -179,6 +179,9 @@ header{
     display: flex;
     align-content: center;
     justify-content: center;
+    @include en{
+      line-height: 2;
+    }
   }
 
 }
@@ -213,8 +216,12 @@ nav{
     }
     .drop_down{
       @include drop_down_;
+      @include en{
+        min-width: 165px;
+      }
       top: 50px;
       padding: 15px 20px;
+      
       .ul_drop{
         >li{
           line-height: 1.8;
@@ -282,6 +289,10 @@ top: 0;
       i{
         color: $color_1;
       }
+        .btn_user, .btn_cart, .anc_lang{
+          transition: .5s;
+            color: $color_1;
+          }
     }
   }
 order: 2;
