@@ -1,0 +1,170 @@
+.faq_parant{
+  margin-bottom: 120px;
+}
+.faq{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+// faq right
+.collapse_parant{
+  display: flex;
+  background-color: #f7f7f7;
+  margin-bottom: 5px;
+  .number_c{
+    background-color: #f2f2f2;
+    width: 80px;
+    padding: 30px;
+    border-left: 2px solid #e8e8e8;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+
+    @include en{
+    border-right: 2px solid #e8e8e8;
+    }
+  }
+  .btn_collapse_, .number_c{
+    font-weight: 700;
+    color: $color_6;
+
+  }
+  .group_collapse{
+    width: 100%;
+  }
+  .btn_collapse_{
+    padding: 30px;
+    width: 100%!important;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .toggle_collapse{
+    padding: 0 30px 30px 80px;
+    text-align: justify;
+    font-size: 16px;
+    color: $color_6;
+    font-weight: 400;
+    line-height: 1.8;
+    display: none;
+  }
+}
+.icon-wrapper {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.bar {
+  position: absolute;
+	top: 11px;
+	height: 2px;
+	width: 16px;
+	background-color: black;
+}
+.bar--horizontal {
+transform: rotate(90deg);
+  transition: all ease 0.5s;
+}
+.bar--horizontal.is-active {
+transform: rotate(540deg);
+}
+@keyframes minus {
+  100% {
+    transform: rotate(540deg);
+  }
+}
+@keyframes plus {
+  100% {
+    transform: rotate(540deg);
+  }
+}
+.minus {
+	animation: minus 0.5s ease;
+	animation-fill-mode: forwards;
+}
+.plus {
+  animation: plus 0.5s ease;
+	animation-fill-mode: forwards;
+}
+.poen_co{
+  color: $main_color!important;
+}
+.poen_backg{
+  background-color: $main_color!important;
+}
+// faq left
+.faq_left{
+  border-radius: 10px;
+  background-color: #fbe9eb;
+  padding: 35px 35px 35px 50px;
+  // position: relative;
+  overflow: hidden;
+  height: 341px;
+  position: sticky;
+  top: 0;
+  strong{
+  font-size: 16px;
+  color: $main_color;
+  text-align: start;
+  line-height: 26px;
+  margin-bottom: 30px;
+  }
+  .faq-shap{
+    position: absolute;
+    left: -97px;
+    top: 130px;
+    max-width: 100%;
+  }
+  .contact_faq{
+    margin-bottom: 30px;
+  }
+  .anc_contact{
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: $color_6;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    &:hover{
+      color: $main_color;
+    }
+    i {
+      font-size: 24px;
+      color: $main_color;
+      margin-inline-end: 10px;
+    }
+    
+  }
+  .ul_social{
+    a{
+      background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
+
+    };
+  }
+}
+
+
+
+
+
+
+.تعمل_جميع_مولّدات_نصوص_لوريم_إيبسوم_على_الإنترن {
+  font-size: 16px;
+  font-family: "Tajawal";
+  color: rgb(0, 0, 0);
+  line-height: 1.875;
+  text-align: justifyLeft;
+  position: absolute;
+  left: 790.258px;
+  top: 406.949px;
+  width: 364px;
+  height: 202px;
+  z-index: 96;
+}
