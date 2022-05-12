@@ -263,7 +263,6 @@
   }
 }
 }
-
 @mixin btn_gradient {
   .btn_gradient{
     background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
@@ -273,5 +272,12 @@
       color: $color_1;
     }
   }
+
+}
+@mixin title_ {
+  font-size: 22px;
+  color: $color_6;
+  font-weight: 700;
+  text-transform: capitalize;
 
 }

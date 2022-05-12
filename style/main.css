@@ -2609,12 +2609,24 @@ html[dir="rtl"] .form_group .Flag-login {
   margin-bottom: 120px;
 }
 
+.faq_parant .breadcrumb_ {
+  margin-bottom: 60px;
+}
+
 .faq {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+.title_faq {
+  text-align: start;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 40px;
 }
 
 .collapse_parant {
@@ -2758,7 +2770,7 @@ html[dir="ltr"] .collapse_parant .number_c {
   background-color: #d52d3b !important;
 }
 
-.faq_left {
+.contact_left {
   border-radius: 10px;
   background-color: #fbe9eb;
   padding: 35px 35px 35px 50px;
@@ -2769,7 +2781,7 @@ html[dir="ltr"] .collapse_parant .number_c {
   top: 0;
 }
 
-.faq_left strong {
+.contact_left strong {
   font-size: 16px;
   color: #d52d3b;
   text-align: start;
@@ -2777,18 +2789,18 @@ html[dir="ltr"] .collapse_parant .number_c {
   margin-bottom: 30px;
 }
 
-.faq_left .faq-shap {
+.contact_left .faq-shap {
   position: absolute;
   left: -97px;
   top: 130px;
   max-width: 100%;
 }
 
-.faq_left .contact_faq {
+.contact_left .contact_faq {
   margin-bottom: 30px;
 }
 
-.faq_left .anc_contact {
+.contact_left .anc_contact {
   text-align: start;
   margin-bottom: 20px;
   font-size: 18px;
@@ -2804,33 +2816,209 @@ html[dir="ltr"] .collapse_parant .number_c {
   transition: .5s;
 }
 
-.faq_left .anc_contact:hover {
+.contact_left .anc_contact:hover {
   color: #d52d3b;
 }
 
-.faq_left .anc_contact i {
+.contact_left .anc_contact i {
   font-size: 24px;
   color: #d52d3b;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
 }
 
-.faq_left .ul_social a {
+.contact_left .ul_social a {
   background-image: -webkit-gradient(linear, left top, right top, from(#ef495d), color-stop(#d52d3b), color-stop(#d52d3b), to(#ef495d));
   background-image: linear-gradient(to right, #ef495d, #d52d3b, #d52d3b, #ef495d);
 }
 
-.تعمل_جميع_مولّدات_نصوص_لوريم_إيبسوم_على_الإنترن {
+.privacy .breadcrumb_ {
+  margin-bottom: 60px;
+}
+
+.content_privacy {
+  margin-bottom: 140px;
+  text-align: start;
+}
+
+.content_privacy h2 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.content_privacy h4, .content_privacy p {
   font-size: 16px;
-  font-family: "Tajawal";
-  color: black;
-  line-height: 1.875;
-  text-align: justifyLeft;
+  line-height: 1.625;
+  color: #000000;
+}
+
+.content_privacy h4 {
+  font-weight: 700;
+}
+
+.content_privacy p {
+  font-weight: 400;
+}
+
+.content_privacy li::before {
+  content: "-";
+  font-size: 16px;
+}
+
+.content_privacy .first_p {
+  margin-bottom: 15px;
+}
+
+.content_privacy ul {
+  margin-bottom: 35px;
+}
+
+.content_privacy .second_p {
+  margin-bottom: 30px;
+}
+
+.content_privacy .group_priv {
+  margin-bottom: 30px;
+}
+
+.content_privacy .group_priv h4 {
+  margin-bottom: 10px;
+}
+
+.content_privacy .group_priv a {
+  font-size: 16px;
+  color: #d52d3b;
+  text-decoration: underline;
+}
+
+.contact_section .breadcrumb_ {
+  margin-bottom: 60px;
+}
+
+.form_section h2 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.form_section > p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.625;
+  margin-bottom: 30px;
+}
+
+.form_section > p a {
+  color: #d52d3b;
+  text-decoration: underline;
+}
+
+.contact_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: start;
+}
+
+form {
+  text-align: start;
+}
+
+.group_form {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.group_form .angle_select {
   position: absolute;
-  left: 790.258px;
-  top: 406.949px;
-  width: 364px;
-  height: 202px;
-  z-index: 96;
+  top: 50px;
+  font-size: 10px;
+  color: #666666;
+}
+
+html[dir="rtl"] .group_form .angle_select {
+  left: 25px;
+}
+
+html[dir="ltr"] .group_form .angle_select {
+  right: 25px;
+}
+
+.group_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.group_form label.required::after {
+  content: "*";
+  font-size: 16px;
+  color: #d52d3b;
+}
+
+.group_form select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.group_form input, .group_form select {
+  border: 1px solid #d9d9d9;
+  height: 46px;
+  border-radius: 23px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.group_form input:focus, .group_form select:focus {
+  outline: 0;
+  border-color: #d52d3b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.group_form textarea.form-control {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 21px;
+  color: #666666;
+  height: 84px;
+  resize: none;
+  padding: 15px 25px;
+}
+
+.group_form textarea.form-control:focus {
+  outline: 0;
+  border-color: #d52d3b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

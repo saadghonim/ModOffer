@@ -1,0 +1,114 @@
+.contact_section{
+  .breadcrumb_{
+    margin-bottom: 60px;
+  }
+}
+.form_section{
+  h2{
+    @include title_;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  >p{
+    font-size: 16px;
+    color: $color_6;
+    font-weight: 400;
+    line-height: 1.625;
+    margin-bottom: 30px;
+    a{
+      color: $main_color;
+      text-decoration: underline;
+    }
+  }
+}
+.contact_content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: start;
+}
+
+form{
+  text-align: start;
+}
+.group_form{
+  margin-bottom: 20px;
+  position: relative;
+  .angle_select{
+    position: absolute;
+    top: 50px;
+    font-size: 10px;
+    color: $color_5;
+    @include ar{
+      left: 25px;
+    }
+    @include en{
+      right: 25px;
+    }
+  }
+  label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: $color_6;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  label.required{
+    &::after{
+      content: "*";
+      font-size: 16px;
+      color: $main_color;
+    }
+  }
+  select{
+    cursor: pointer;
+    appearance: none; 
+    
+  }
+  input, select{
+    border: 1px solid #d9d9d9;
+    height: 46px;
+    border-radius: 23px;
+    transition: .5s;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color_5;
+    &:focus{
+      outline: 0;
+      border-color: $main_color;
+      box-shadow: none;
+
+    }
+  }
+  textarea.form-control{
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 21px;
+    color: $color_5;
+    height: 84px;
+    resize: none;
+    padding: 15px 25px;
+    &:focus{
+      outline: 0;
+      border-color: $main_color;
+      box-shadow: none;
+    }
+
+  }
+}
+
+
+
+
+form input, form select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}

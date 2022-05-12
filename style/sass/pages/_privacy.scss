@@ -1,0 +1,54 @@
+.privacy{
+  .breadcrumb_{
+    margin-bottom: 60px;
+  }
+}
+.content_privacy{
+  margin-bottom: 140px;
+  text-align: start;
+  h2{
+  @include title_;
+  margin-bottom: 40px;
+  }
+  h4, p{
+    font-size: 16px;
+    line-height: 1.625;
+    color: $color_6;
+    
+  }
+  h4{
+    font-weight: 700;
+  }
+  p{
+    font-weight: 400;
+  }
+  li{
+    &::before{
+      content: "-";
+      font-size: 16px;
+
+    }
+  }
+  .first_p{
+    margin-bottom: 15px;
+  }
+  ul{
+    margin-bottom: 35px;
+  }
+  .second_p{
+    margin-bottom: 30px;
+  }
+  .group_priv{
+    margin-bottom: 30px;
+    h4{
+      margin-bottom: 10px;
+    }
+    a{
+      font-size: 16px;
+      color: $main_color;
+      text-decoration: underline;
+    }
+  }
+
+}
+

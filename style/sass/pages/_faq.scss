@@ -1,10 +1,20 @@
 .faq_parant{
   margin-bottom: 120px;
+  .breadcrumb_{
+    margin-bottom: 60px;
+  }
 }
 .faq{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+.title_faq{
+  text-align: start;
+  font-size: 22px;
+  font-weight: 700;
+  color: $color_6;
+  margin-bottom: 40px;
 }
 // faq right
 .collapse_parant{
@@ -98,11 +108,10 @@ transform: rotate(540deg);
   background-color: $main_color!important;
 }
 // faq left
-.faq_left{
+.contact_left{
   border-radius: 10px;
   background-color: #fbe9eb;
   padding: 35px 35px 35px 50px;
-  // position: relative;
   overflow: hidden;
   height: 341px;
   position: sticky;
@@ -150,21 +159,3 @@ transform: rotate(540deg);
   }
 }
 
-
-
-
-
-
-.تعمل_جميع_مولّدات_نصوص_لوريم_إيبسوم_على_الإنترن {
-  font-size: 16px;
-  font-family: "Tajawal";
-  color: rgb(0, 0, 0);
-  line-height: 1.875;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 790.258px;
-  top: 406.949px;
-  width: 364px;
-  height: 202px;
-  z-index: 96;
-}
