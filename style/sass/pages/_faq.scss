@@ -158,4 +158,44 @@ transform: rotate(540deg);
     };
   }
 }
+@include sm{
+  .faq{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .contact_left{
+    height: 400px;
+    padding: 35px;
 
+  }
+
+
+}
+@include xs{
+  .collapse_parant{
+
+    .btn_collapse_{
+      padding: 20px
+    }
+    .toggle_collapse {
+      padding: 0px 20px 20px ;
+    }
+    .number_c {
+      padding: 0;
+      padding-top: 30px;
+      width: 45px;
+    }
+  } 
+  .contact_left{
+    height: auto;
+    padding: 30px;
+    strong{
+      font-size: 15px;
+    }
+  }
+  .contact_left{
+    .faq-shap {
+      left: -106px;
+    }
+  } 
+}

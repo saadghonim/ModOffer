@@ -1,4 +1,5 @@
 .contact_section{
+  margin-bottom: 120px;
   .breadcrumb_{
     margin-bottom: 60px;
   }
@@ -30,20 +31,55 @@
 
 form{
   text-align: start;
+  .btn_send{
+    @include btn_gradient;
+    min-width: 176px;
+    height: 45px;
+    border-radius: 22.5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: $color_1;
+    text-transform: capitalize;
+  }
 }
 .group_form{
   margin-bottom: 20px;
+  .position_r{
   position: relative;
+    .Flag_{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      font-size: 14px;
+      color: $color_5;
+      transform: translateY(-50%);
+      top: 50%;
+      font-weight: 400;
+      @include en{right: 25px;}
+      @include ar{left: 25px;}
+      img{
+        margin-inline-start: 5px;
+        max-width: 100%;
+      }
+  }
   .angle_select{
     position: absolute;
-    top: 50px;
     font-size: 10px;
     color: $color_5;
+    transform: translateY(-50%);
+    top: 50%;
     @include ar{
       left: 25px;
     }
     @include en{
       right: 25px;
+    }
+  }
+  }
+  .mob_{
+    input{
+      text-align: left;
+      padding-left:92px;
     }
   }
   label{
@@ -53,6 +89,7 @@ form{
     color: $color_6;
     font-weight: 700;
     text-transform: capitalize;
+    padding-inline-start: 20px;
   }
   label.required{
     &::after{
@@ -75,6 +112,7 @@ form{
     font-size: 14px;
     font-weight: 400;
     color: $color_5;
+    width: 100%;
     &:focus{
       outline: 0;
       border-color: $main_color;
@@ -83,6 +121,7 @@ form{
     }
   }
   textarea.form-control{
+    margin-bottom: 25px;
     width: 100%;
     border: 1px solid #d9d9d9;
     padding: 0 25px;
@@ -100,15 +139,33 @@ form{
     }
 
   }
+
 }
 
 
-
-
-form input, form select{
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  background-color: white;
+@include xs{
+  .contact_content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  form{
+    .btn_send{
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+  .group_form{
+    input, select{
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+  .form_section{
+    h2{
+      margin-top: 0;
+    }
+  }
+  .contact_section{
+    margin-bottom: 80px;
+  }
 }

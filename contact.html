@@ -23,7 +23,6 @@
     <div class="contact"></div>
       <!-- breadcrumb -->
       <div class="breadcrumb_parant">
-        <div class="container">
           <div class="breadcrumb_">
             <a href="index.html" class="anc_home anc_gh">الرئيسية</a>
                 /
@@ -31,7 +30,6 @@
                   من نحن
                 </p>  
           </div>
-        </div>
       </div>
       <div class="contact_content">
         <div class="form_section">
@@ -49,13 +47,15 @@
               <input type="text" class="form-control">
             </div>
             <div class="group_form">
-              <i class="las la-angle-down angle_select"></i>
               <label for="first name" class="required" required>نوع الرسالة</label>
-              <select name="region" id="region" required>
-                <option value="">استفسار بخصوص العروض</option>
-                <option value="">استفسار بخصوص العروض</option>
-                <option value="">استفسار بخصوص العروض</option>
-            </select>
+              <div class="position_r">
+              <i class="las la-angle-down angle_select"></i>
+                <select name="region" id="region" required>
+                  <option value="">استفسار بخصوص العروض</option>
+                  <option value="">استفسار بخصوص العروض</option>
+                  <option value="">استفسار بخصوص العروض</option>
+              </select>
+              </div>
             </div>
             <div class="group_form">
               <label for="first name">البريد الإلكتروني</label>
@@ -63,7 +63,14 @@
             </div>
             <div class="group_form">
               <label for="first name" class="required" required>رقم الجوال</label>
-              <input type="tel" class="form-control">
+              <div class="position_r mob_">
+                <input type="tel" class="form-control" placeholder="5xxxxxxxx">
+                <div class="Flag_">
+                  
+                  966+
+                  <img src="images/ar.png" width="27" height="19" alt="Flag-Saudi-Arabia">
+                </div>
+              </div>
             </div>
             <div class="group_form">
               <label for="first name" class="required" required>نص الرسالة</label>
@@ -71,6 +78,7 @@
 
               </textarea>
             </div>
+            <button class="btn_gh btn_send form-submit">ارسال</button>
           </form>
         </div>
         <div class="contact_left">
