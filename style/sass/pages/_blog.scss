@@ -6,13 +6,13 @@
     @include title_;
     margin-bottom: 30px;
   }
-.blog{
+  margin-bottom: 80px;
+}
+.blog_{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 30px;
   margin-bottom: 60px;
-}
-margin-bottom: 80px;
 }
 .navigation{
   ul{
@@ -37,20 +37,16 @@ margin-bottom: 80px;
 
 
 @include sm{
-  .blog_section{
-    .blog{
+    .blog_{
       grid-template-columns: repeat(2, 1fr);
     }
-  }
 
 }
 
 @include xs{
-  .blog_section{
-    .blog{
+    .blog_{
       grid-template-columns: repeat(1, 1fr);
       gap: 30px 30px;
     }
-  }
 
 }

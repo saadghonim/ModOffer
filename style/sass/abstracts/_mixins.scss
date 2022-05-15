@@ -267,6 +267,7 @@
     background-image: linear-gradient(to right,#ef495d,#d52d3b,#d52d3b,#ef495d);
     background-size: 300%;
     transition: .5s;
+    text-transform: capitalize;
     &:hover{
       background-position: 100%;
       color: $color_1;
