@@ -226,21 +226,30 @@
 }
 .send_comment{
   form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px 30px;
-    button{
-      height: 45px;
-      padding: 0 40px;
-      @include btn_gradient;
-      border-radius: 22.5px;
-      color: $color_1;
-      font-weight: 700;
-      font-size: 16px;
+
+    .form_line{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-bottom: 20px;
     }
+  
+
   }
 }
-
+.btn_form{
+  display: flex;
+  justify-content: flex-end;
+  button{
+    height: 45px;
+    padding: 0 40px;
+    @include btn_gradient;
+    border-radius: 22.5px;
+    color: $color_1;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
 .group_comment{
   display: flex;
   flex-direction: column;
@@ -274,7 +283,47 @@
     height: 104px;
     resize: none;
     border-radius: 21px;
+    margin-bottom: 20px;
   }
 }
 
 
+@include xs{
+  .blog-post_section {
+    h2{
+      font-size: 22px;
+    }
+  }
+  .content_p {
+    padding: 0;
+    .group_blog_date{
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      span{
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .group_content{
+    p, li, a{
+      font-size: 16px;
+    }
+  }
+
+  .group_btn{
+    flex-wrap: wrap;
+    button{
+      margin-bottom: 5px;
+    }
+  }
+  .send_comment{
+    form{
+      .form_line{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

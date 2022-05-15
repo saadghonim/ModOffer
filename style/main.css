@@ -3549,15 +3549,25 @@ html[dir="ltr"] .group_form .position_r .angle_select {
   font-weight: 500;
 }
 
-.send_comment form {
+.send_comment form .form_line {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 15px 30px;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
-.send_comment form button {
+.btn_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn_form button {
   height: 45px;
   padding: 0 40px;
   background-image: -webkit-gradient(linear, left top, right top, from(#ef495d), color-stop(#d52d3b), color-stop(#d52d3b), to(#ef495d));
@@ -3572,7 +3582,7 @@ html[dir="ltr"] .group_form .position_r .angle_select {
   font-size: 16px;
 }
 
-.send_comment form button:hover {
+.btn_form button:hover {
   background-position: 100%;
   color: #ffffff;
 }
@@ -3623,5 +3633,39 @@ html[dir="ltr"] .group_form .position_r .angle_select {
   height: 104px;
   resize: none;
   border-radius: 21px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-post_section h2 {
+    font-size: 22px;
+  }
+  .content_p {
+    padding: 0;
+  }
+  .content_p .group_blog_date {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .content_p .group_blog_date span {
+    margin-bottom: 15px;
+  }
+  .group_content p, .group_content li, .group_content a {
+    font-size: 16px;
+  }
+  .group_btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .group_btn button {
+    margin-bottom: 5px;
+  }
+  .send_comment form .form_line {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
