@@ -94,7 +94,26 @@ if ($(window).width() <= 767){
       }
     })
 };
-
+// Gallery
+$('.gallery .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  lazyLoad:true,
+  rtl: $("html").attr("dir") == "rtl" ? true : false,
+  nav:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
 });
 
 // menu & overlay
@@ -121,25 +140,25 @@ if ($(window).width() <= 767){
 // });
 
 // back_top
-// var btn = $('.back_top');
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 100) {
-//     btn.addClass('show');
-//   } else {
-//     btn.removeClass('show');
-//   }
-// });
-// btn.on('click', function(e) {
-//   e.preventDefault();
-//   $('html, body').animate({scrollTop:0}, '500');
-// });
-// $(window).on('scroll', function() {
-//   if($(window).scrollTop() > 300) {
-//         $("nav").addClass("fixed");
-//   } else {
-//       $("nav").removeClass("fixed");
-//   };
-// });
+var btn = $('.back_top');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '500');
+});
+$(window).on('scroll', function() {
+  if($(window).scrollTop() > 300) {
+        $("nav").addClass("fixed");
+  } else {
+      $("nav").removeClass("fixed");
+  };
+});
 
 // login 
 // click_user.addEventListener("click", function(){
@@ -218,14 +237,21 @@ if ($(window).width() <= 767){
     // }
 
 
-$(document).ready(function(){
-  $('.btn_collapse_').click(function(){
-    var toggle = $(this).next('.toggle_collapse');
-    $(toggle).slideToggle("slow").prev(".color_toggle").toggleClass("poen_co");
-    $(toggle).prev().children().children(".backg_toggle").toggleClass("poen_backg");
-    $(toggle).parent().prev(".color_toggle").toggleClass("poen_co"); 
-    $(this).children().children('.bar--horizontal').toggleClass("is-active");
-  });
-});
+// $(document).ready(function(){
+//   $('.btn_collapse_').click(function(){
+//     var toggle = $(this).next('.toggle_collapse');
+//     $(toggle).slideToggle("slow").prev(".color_toggle").toggleClass("poen_co");
+//     $(toggle).prev().children().children(".backg_toggle").toggleClass("poen_backg");
+//     $(toggle).parent().prev(".color_toggle").toggleClass("poen_co"); 
+//     $(this).children().children('.bar--horizontal').toggleClass("is-active");
+//   });
+// });
     
+
+
+$(".range-slider-input").on("input", function (e) {
+  var width = $(this).val()
+  $(this).siblings(".value-bg").width(width * 20 + "%");
+  $(this).parents(".range-slider-item").find(".value").html(width);
+});
 

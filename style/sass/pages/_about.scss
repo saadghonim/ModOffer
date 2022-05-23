@@ -138,7 +138,9 @@
       font-size: 24px;
       margin-inline-end: 15px;
       color: $main_color;
-
+      @include en{
+      content: "";
+      }
     }
   }
 }
