@@ -72,13 +72,6 @@
     }
   }
 }
-.social_contact{
-  text-align: start;
-  margin-bottom: 50px;
-  img{
-    max-width: 100%;
-  }
-}
 .blog_post_sec{
   border-bottom: 1px solid #e5e8ed;
 }
@@ -99,6 +92,74 @@
       margin-inline-end: 5px;
     }
   }
+}
+.share{
+  display: flex;
+  margin-bottom: 30px;
+  .share_link{
+    height: 55px;
+    color: $color_1;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    margin-inline-end: 10px;
+    border-radius: 3px;
+    &:hover{
+      background-color: $main_color;
+      text-decoration: none;
+    }
+    i{
+      font-size: 24px;
+    }
+  }
+}
+.facebook-share, .twitter-share{
+  padding: 15px;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 500;
+  i{
+    border-inline-end: 2px solid rgba(255, 255, 255, .4);
+    height: 100%;
+    padding-inline-end: 15px;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 15px;
+  }
+}
+.linkedin-share,.tumblr-share,.pinterest-share,.reddit-share,
+.vk-share,.email-share,.print-share{
+  width: 58px;
+  justify-content: center;
+}
+.linkedin-share{
+  background-color: #238cc8;
+}
+.twitter-share{
+  background-color: #40bff5;
+  width: 144px;
+}
+.facebook-share{
+  background-color: #4080ff;
+  width: 157px;
+}
+.tumblr-share{
+  background-color: #35465c;
+}
+.pinterest-share{
+  background-color: #e13138;
+}
+.reddit-share{
+  background-color: #ff4500;
+}
+.vk-share{
+  background-color: #45668e;
+}
+.email-share{
+  background-color: #333333;
+}
+.print-share{
+  background-color: #444444;
 }
 .blog_prev-next{
   padding: 35px 0;

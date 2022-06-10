@@ -114,44 +114,50 @@
     width: 194px;
     height: 86px;
     background-color: #f7f7f7;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     h5{
       font-size: 16px;
       color: $color_6;
       text-transform: capitalize;
       font-weight: 500;
+      display: flex;
+      align-items: center;
     }
     span{
       display: block;
       text-align: start;
-      font-size: 22px;
+      font-size: 28px;
       color: $main_color;
       font-weight: 500;
-
+      line-height: 1.2;
+      margin-inline-start: 35px;
     }
     &:first-child{
-      &::before{
-        content: "";
-        font-family: "line awesome free";
-        font-weight: 900;
-        font-size: 24px;
-        margin-inline-end: 10px;
-        color: #999999;
+      h5{
+        &::before{
+          content: "";
+          font-family: "line awesome free";
+          font-weight: 900;
+          font-size: 24px;
+          margin-inline-end: 10px;
+          color: #999999;
+        }
       }
+      
       margin-inline-end: 10px;
     }
     &:last-child{
-      &::before{
-        content: "";
-        font-family: "line awesome free";
-        font-weight: 900;
-        font-size: 24px;
-        margin-inline-end: 10px;
-        color: #999999;
+      h5{
+        &::before{
+          content: "";
+          font-family: "line awesome free";
+          font-weight: 900;
+          font-size: 24px;
+          margin-inline-end: 10px;
+          color: #999999;
+        }
       }
-
-
     }
   }
 }
@@ -163,6 +169,7 @@
   display: grid;
   grid-template-columns: repeat(1, 2fr 1fr);
   gap: 30px;
+  margin-bottom: 100px;
 }
 
 .title_provider{
@@ -453,8 +460,8 @@ display: none;
   position: sticky;
   top: 20px;
   text-align: start;
-  padding: 25px;
-  max-height: 642px;
+  padding: 20px 30px;
+  max-height: 622px;
   img{
     max-width: 100%;
   }
@@ -487,7 +494,7 @@ display: none;
 
 .ul_social_{
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   a{
     font-size: 24px;
     margin-inline-end: 15px;
@@ -496,5 +503,50 @@ display: none;
     &:hover{
       color: #f7d5d8;
     }
+  }
+}
+
+
+@include sm{
+  .provider_left{
+    flex-direction: column;
+    >div{
+      &:first-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@include xs{
+  .about_provider{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .service-provider-page{
+    flex-direction: column;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    .provider_content{
+      margin-inline-start: 15px;
+    }
+  }
+  .provider_right{
+    margin-bottom: 30px;
+  }
+  .provider_left{
+    flex-direction: unset;
+    justify-content: center;
+  }
+  .about_text{
+    margin-bottom: 15px;
+  }
+  .section_about{
+    .gallery{
+      margin-bottom: 15px;
+    }
+  } 
+
+  .Customer_Reviews{
+    margin-bottom: 0px;
   }
 }

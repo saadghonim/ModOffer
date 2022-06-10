@@ -114,30 +114,38 @@ $('.gallery .owl-carousel').owlCarousel({
       }
   }
 })
+
+// ~~~~~~~~~~~~~~~~~~~drag_down
+$(".Add-review").click(function () {
+  $('html, body').animate({
+      scrollTop: $(".range-sliders-cont").offset().top -100
+  }, 1000);
+});
+// ~~~~~~~~~~~~~~~
 });
 
 // menu & overlay
-// open_menu.addEventListener("click", function(){
-//   navBar_.classList.add("open_");
-//   body_.classList.add("over_");
-//   overlay.style.display = "block";
+open_menu.addEventListener("click", function(){
+  navBar_.classList.add("open_");
+  body_.classList.add("over_");
+  overlay.style.display = "block";
 
-// });
-// overlay.addEventListener("click", function(){
-//   navBar_.classList.remove("open_");
-//   body_.classList.remove("over_");
-//   overlay.style.display = "none";
-//   login_form.classList.remove("open_login");
+});
+overlay.addEventListener("click", function(){
+  navBar_.classList.remove("open_");
+  body_.classList.remove("over_");
+  overlay.style.display = "none";
+  login_form.classList.remove("open_login");
 
 
 
-// });
-// close_.addEventListener("click", function(){
-//   navBar_.classList.remove("open_");
-//   body_.classList.remove("over_");
-//   overlay.style.display = "none";
+});
+close_.addEventListener("click", function(){
+  navBar_.classList.remove("open_");
+  body_.classList.remove("over_");
+  overlay.style.display = "none";
 
-// });
+});
 
 // back_top
 var btn = $('.back_top');
@@ -161,16 +169,16 @@ $(window).on('scroll', function() {
 });
 
 // login 
-// click_user.addEventListener("click", function(){
-//   body_.classList.add("over_");
-//   overlay.style.display = "block";
-//   login_form.classList.add("open_login");
-// })
-// close_log.addEventListener("click", function(){
-//   body_.classList.remove("over_");
-//   overlay.style.display = "none";
-//   login_form.classList.remove("open_login");
-// })
+click_user.addEventListener("click", function(){
+  body_.classList.add("over_");
+  overlay.style.display = "block";
+  login_form.classList.add("open_login");
+})
+close_log.addEventListener("click", function(){
+  body_.classList.remove("over_");
+  overlay.style.display = "none";
+  login_form.classList.remove("open_login");
+})
 
 // var mins = document.querySelector(".minutes");
 // var hours = document.querySelector(".hours");
@@ -193,7 +201,6 @@ $(window).on('scroll', function() {
 
 
     // ~~~~~~~~~~~~~~preload~~~~~~~~~~~~~~
-
 
     // document.onreadystatechange = function(e)
     // {
@@ -237,15 +244,15 @@ $(window).on('scroll', function() {
     // }
 
 
-// $(document).ready(function(){
-//   $('.btn_collapse_').click(function(){
-//     var toggle = $(this).next('.toggle_collapse');
-//     $(toggle).slideToggle("slow").prev(".color_toggle").toggleClass("poen_co");
-//     $(toggle).prev().children().children(".backg_toggle").toggleClass("poen_backg");
-//     $(toggle).parent().prev(".color_toggle").toggleClass("poen_co"); 
-//     $(this).children().children('.bar--horizontal').toggleClass("is-active");
-//   });
-// });
+$(document).ready(function(){
+  $('.btn_collapse_').click(function(){
+    var toggle = $(this).next('.toggle_collapse');
+    $(toggle).slideToggle("slow").prev(".color_toggle").toggleClass("poen_co");
+    $(toggle).prev().children().children(".backg_toggle").toggleClass("poen_backg");
+    $(toggle).parent().prev(".color_toggle").toggleClass("poen_co"); 
+    $(this).children().children('.bar--horizontal').toggleClass("is-active");
+  });
+});
     
 
 
